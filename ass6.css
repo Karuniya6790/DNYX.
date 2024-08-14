@@ -1,0 +1,62 @@
+/* Apply Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    background-color: #2e342d;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Create many small columns */
+    grid-gap: 10px;
+    max-width: 200%;
+    width: 100%;
+    padding: 10px;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Adjust for image, content, and button */
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(142, 23, 23, 0.1);
+    padding: 15px;
+}
+
+.card img {
+    width: 200%;
+    height: auto;
+    object-fit: cover;
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    color: #6c8091;
+    margin: 0;
+    font-size: 14px;
+}
+
+.content p {
+    color: #00b4d0;
+    font-size: 12px;
+    margin: 5px 0 10px;
+}
+
+.learn-more {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 12px;
+    color: rgb(30, 26, 26);
+    background-color: #6c8091;
+    text-decoration: none;
+    border-radius}
