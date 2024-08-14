@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Password Form</title>
+    <link rel="stylesheet" href="ass8.css">
+</head>
+<body>
+    <div class="form-container">
+        <form id="updatePasswordForm">
+            <h2>Update Password</h2>
+            <div class="form-group">
+                <label for="newPassword">New Password:</label>
+                <input type="password" id="newPassword" name="newPassword">
+                <p id="newPasswordErrMsg" class="error-message"></p>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword">
+                <p id="confirmPasswordErrMsg" class="error-message"></p>
+            </div>
+            <button type="submit" id="updateBtn">Update Password</button>
+        </form>
+    </div>
+    <script src="scr8.js"></script>
+</body>
+</html>
